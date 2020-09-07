@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Set font family to Roboto */
+body {
+    font-family: "Roboto" ;
+}
+
+/*Set gray background for header area*/
+.headerbox {
+    background-color: #f2f2f2;
+    padding: 20px 20px 10px 20px;
+
+}
+
+/*Style logo */
+.logo {
+    display: inline-block;
+}
+
+/*Style navigation list*/
+.nav-list li {
+    list-style-type: none;
+    text-align: left;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+.nav-list-item{
+    color: #000;
+    text-decoration: none; 
+}
+
+/*Change nav list item color to organge on hover*/
+.nav-list-item:hover {
+    color: #ff5c0f;
+}
+
+/*Set h1 default color to teal */
+h1 {
+    color: #20a8b4;
+}
+
+.main-container {
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+/*Set button default parameters */
+.button {
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #20a8b4;
+    color: #fff;
+    text-align: center;
+    display: inline
+}
+
+.button:hover {
+    background-color: #ff5c0f;
+}
+
+/*Change text color to orange*/
+.orange {
+    color: #ff5c0f;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+.p-strong {
+    font-weight: bold;
+}
+
+#img-code {
+    visibility: hidden;
+}
+
+/* Desktop version */
+
+@media screen and (min-width: 768px) {
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list-item {
+    margin-right: 10px;
+}
+
+.button {
+    width: auto;
+    }
+
+.headerbox {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#img-code {
+    visibility: visible;
+    width: 50%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.main-container-text {}
+
+.main-container-image {}
+
+}
+
