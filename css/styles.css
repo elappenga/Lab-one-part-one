@@ -107,20 +107,32 @@ div {
 
 #img-code {
     visibility: visible;
-    width: 50%;
-}
+    min-width: 300px;
+    max-width: 500px;
+    }
 
 .main-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
-.main-container-text {}
+.main-container-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+}
 
-.main-container-image {}
+.main-container-image {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin: 100px;
+    max-width: fit;
+}
 
 }
 
